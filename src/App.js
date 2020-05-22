@@ -1,11 +1,28 @@
 import React from "react";
-import Badge, { colors } from "./ui/atoms/Badge";
+import styled from "styled-components";
+import CategoryItem from "./ui/molecules/CategoryItem";
+import "./reset.css";
+import "./fonts.css";
 
-export default function App() {
-      return (
-            <div className="App">
-                <Badge text="IRL" color={colors.purple}/>
-                <Badge text="IRL" color={colors.grey}/>
-            </div>
-      );
-}
+const AppWrapper = styled.div`
+  font-family: "Roobert TRIAL";
+  width: 375px;
+  height: 744px;
+  background-color: black;
+  padding: 1rem;
+`;
+
+const App = () => {
+  return (
+    <AppWrapper>
+      <CategoryItem
+        title="Just Chatting"
+        badges={["IRL", "Design", "Dev"]}
+        viewers="250k"
+        image="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
+      />
+    </AppWrapper>
+  );
+};
+
+export default App;
