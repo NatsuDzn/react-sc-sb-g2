@@ -23,7 +23,7 @@ const BadgesWrapper = styled.div`
 `;
 
 const CategoryItem = (props) => {
-  const { title, badges, viewers, image } = props;
+  const { title, badges, viewers, image, size } = props;
 
   return (
     <CategoryItemWrapper
@@ -31,14 +31,9 @@ const CategoryItem = (props) => {
         flexDirection: viewers === undefined ? "column" : "row",
       }}
     >
-      <Image image={image} />
-
+      <Image image={image} size={size}/>
       <Container style={{ marginLeft: viewers === undefined ? "0" : "1rem"}}>
-        <Title
-          style={{
-            fontSize: viewers === undefined ? "14px" : "16px",
-          }}
-        >
+        <Title size={size}>
           {title}
         </Title>
         <ViewerCount>
@@ -58,7 +53,8 @@ CategoryItem.propTypes = {
   title: PropTypes.string,
   badges: PropTypes.array,
   viewers: PropTypes.string,
-  image: PropTypes.string
+  image: PropTypes.string,
+  size: PropTypes.string
 };
 
 CategoryItem.defaultProps = {};

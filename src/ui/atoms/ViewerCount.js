@@ -12,12 +12,11 @@ const ViewerCountWrapper = styled.p`
 
 const ViewerCount = (props) => {
   const { children } = props;
-
   return <ViewerCountWrapper>{children}</ViewerCountWrapper>;
 };
 
 ViewerCount.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.string
 };
 
 export default ViewerCount;

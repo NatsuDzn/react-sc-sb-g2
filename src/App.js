@@ -20,6 +20,7 @@ const App = () => {
         badges={["IRL", "Design", "Dev"]}
         viewers="250k"
         image="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
+        size="xs"
       />
     </AppWrapper>
   );
