@@ -3,6 +3,11 @@ import CategoryItem from "../ui/molecules/CategoryItem";
 import { withKnobs, text, array } from "@storybook/addon-knobs";
 export default {
   title: "CategoryItem",
+  parameters: {
+    backgrounds: [
+      { name: "dark", value: "#000000", default: true }
+    ],
+  },
   component: CategoryItem,
   decorators: [withKnobs],
 };

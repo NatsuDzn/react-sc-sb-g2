@@ -12,7 +12,7 @@ const ImageWrapper = styled.div`
 `;
 
 const Image = (props) => {
-    const { image } = props;
+  const { image } = props;
   return <ImageWrapper style={{ backgroundImage: `url(${image})` }} />;
 };
 

@@ -8,7 +8,6 @@ const CategoryItemWrapper = styled.div`
   display: flex;
   /* flex-wrap: wrap; */
   margin: 16px 0;
-  background: black;
 `;
 
 const Container = styled.div`
