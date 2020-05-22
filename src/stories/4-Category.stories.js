@@ -22,7 +22,7 @@ export const SmallCardBase = () => (
       "Background",
       "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
     )}
-    size={select("Thumbnail size", size, size.xs)}
+    size="xs"
   />
 );
 
@@ -35,7 +35,7 @@ export const XLCardWithoutDetails = () => (
       "Background",
       "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
     )}
-    size={select("Thumbnail size", size, size.l)}
+    size="large"
   />
 );
 
@@ -48,7 +48,7 @@ export const SmallCardWithBadge = () => (
       "Background",
       "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
     )}
-    size={select("Thumbnail size", size, size.xs)}
+    size="xs"
   />
 );
 
@@ -61,6 +61,6 @@ export const LargeCardBase = () => (
       "Background",
       "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
     )}
-    size={select("Thumbnail size", size, size.l)}
+    size="large"
   />
 );
