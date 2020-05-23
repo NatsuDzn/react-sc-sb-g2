@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const size = {
   s: "s",
-  large: "large"
-}
+  large: "large",
+};
 
 const ImageWrapper = styled.div`
   display: block;
@@ -19,12 +19,14 @@ const ImageWrapper = styled.div`
 
 const Image = (props) => {
   const { image, size } = props;
-  return <ImageWrapper style={{ backgroundImage: `url(${image})` }} size={size} />;
+  return (
+    <ImageWrapper style={{ backgroundImage: `url(${image})` }} size={size} />
+  );
 };
 
 Image.propTypes = {
   image: PropTypes.string,
-  size: PropTypes.string
+  size: PropTypes.string,
 };
 
 export default Image;

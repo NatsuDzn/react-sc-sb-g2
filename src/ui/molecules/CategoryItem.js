@@ -6,7 +6,8 @@ import { Badge, Title, ViewerCount, Image } from "../atoms";
 const CategoryItemWrapper = styled.div`
   font-family: "Roobert TRIAL";
   display: flex;
-  flex-direction: ${(props) => (props.orientation === "row" ? "row" : "column")};
+  flex-direction: ${(props) =>
+    props.orientation === "row" ? "row" : "column"};
   margin: 16px 0;
 `;
 
@@ -27,14 +28,10 @@ const CategoryItem = (props) => {
 
   return (
     <CategoryItemWrapper orientation={orientation}>
-      <Image image={image} size={size}/>
+      <Image image={image} size={size} />
       <Container>
-        <Title size={size}>
-          {title}
-        </Title>
-        <ViewerCount>
-          {viewers}
-        </ViewerCount>
+        <Title size={size}>{title}</Title>
+        <ViewerCount>{viewers}</ViewerCount>
         <BadgesWrapper>
           {badges !== undefined
             ? badges.map((badge, i) => <Badge text={badge} key={i} />)
@@ -51,7 +48,7 @@ CategoryItem.propTypes = {
   viewers: PropTypes.string,
   image: PropTypes.string,
   size: PropTypes.string,
-  orientation: PropTypes.string
+  orientation: PropTypes.string,
 };
 
 CategoryItem.defaultProps = {};

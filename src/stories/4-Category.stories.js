@@ -13,46 +13,46 @@ export default {
 };
 
 export const SmallCardBase = () => (
-         <CategoryItem
-           title={text("Title", "VALORANT")}
-           badges={undefined}
-           viewers={text("Viewers Count", "96k spectateurs")}
-           image={text(
-             "Background",
-             "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-144x192.jpg"
-           )}
-           size="s"
-           orientation="column"
-         />
-       );
+  <CategoryItem
+    title={text("Title", "VALORANT")}
+    badges={undefined}
+    viewers={text("Viewers Count", "96k spectateurs")}
+    image={text(
+      "Background",
+      "https://static-cdn.jtvnw.net/ttv-boxart/VALORANT-144x192.jpg"
+    )}
+    size="s"
+    orientation="column"
+  />
+);
 
 export const XLCardWithoutDetails = () => (
-         <CategoryItem
-           title={text("Title", "Minecraft")}
-           badges={undefined}
-           viewers={""}
-           image={text(
-             "Background",
-             "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-144x192.jpg"
-           )}
-           size="large"
-           orientation="column"
-         />
-       );
+  <CategoryItem
+    title={text("Title", "Minecraft")}
+    badges={undefined}
+    viewers={""}
+    image={text(
+      "Background",
+      "https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-144x192.jpg"
+    )}
+    size="large"
+    orientation="column"
+  />
+);
 
 export const SmallCardWithBadge = () => (
-         <CategoryItem
-           title={text("Title", "Overwatch")}
-           badges={array("Badges", ["FPS", "MOBA"])}
-           viewers={text("Viewers Count", "17k spectateurs")}
-           image={text(
-             "Background",
-             "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-144x192.jpg"
-           )}
-           size="s"
-           orientation="column"
-         />
-       );
+  <CategoryItem
+    title={text("Title", "Overwatch")}
+    badges={array("Badges", ["FPS", "MOBA"])}
+    viewers={text("Viewers Count", "17k spectateurs")}
+    image={text(
+      "Background",
+      "https://static-cdn.jtvnw.net/ttv-boxart/Overwatch-144x192.jpg"
+    )}
+    size="s"
+    orientation="column"
+  />
+);
 
 export const LargeCardBase = () => (
   <CategoryItem

@@ -17,7 +17,7 @@ const ViewerCount = (props) => {
 };
 
 ViewerCount.propTypes = {
-  text: PropTypes.string
+  text: PropTypes.string,
 };
 
 export default ViewerCount;
