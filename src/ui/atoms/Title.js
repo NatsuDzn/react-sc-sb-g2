@@ -7,7 +7,7 @@ const TitleWrapper = styled.h1`
   font-family: "Roobert TRIAL";
   color: white;
   font-weight: bold;
-  font-size: ${(props) => (props.size === size.xs ? "14px" : "16px")};
+  font-size: ${(props) => (props.size === size.s ? "14px" : "16px")};
   margin: 2px 0;
 `;
 

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Colors from "../particles/Colors";
 
 const ViewerCountWrapper = styled.p`
+  display: ${(props) => (props.text === "" ? "none" : "block")};
   font-family: "Roobert TRIAL";
   font-size: 12px;
   color: ${Colors.neutral_grey};

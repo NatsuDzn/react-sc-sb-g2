@@ -1,15 +1,13 @@
 @font-face {
-  font-family: 'Roobert TRIAL';
-  src: url('fonts/RoobertTRIAL-Regular.woff2') format('woff2'),
-    url('fonts/RoobertTRIAL-Regular.woff') format('woff');
+  font-family: "Roobert TRIAL";
+  src: url(./assets/fonts/RoobertTRIAL-Regular.otf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roobert TRIAL';
-  src: url('fonts/RoobertTRIAL-Bold.woff2') format('woff2'),
-    url('fonts/RoobertTRIAL-Bold.woff') format('woff');
+  font-family: "Roobert TRIAL";
+  src: url(./assets/fonts/RoobertTRIAL-Bold.otf);
   font-weight: bold;
   font-style: normal;
 }

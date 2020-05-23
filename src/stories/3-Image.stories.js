@@ -6,7 +6,7 @@ export default {
   title: "Image",
   component: Image,
   parameters: {
-    backgrounds: [{ name: "twitter", value: "#000000", default: true }],
+    backgrounds: [{ name: "black", value: "#000000", default: true }],
   },
   decorators: [withKnobs],
 };
@@ -17,6 +17,6 @@ export const CategoryImage = () => (
       "Background",
       "https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-144x192.jpg"
     )}
-    size={select("Thumbnail size", size, size.xs)}
+    size={select("Thumbnail size", size, size.s)}
   />
 );
